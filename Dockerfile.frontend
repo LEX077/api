@@ -1,10 +1,8 @@
-# Usa la imagen oficial de Nginx para servir archivos estáticos
+
 FROM nginx:latest
 
-# Copia los archivos estáticos de tu frontend
+
 COPY ./frontend /usr/share/nginx/html
 
-# Expone el puerto 80
 EXPOSE 80
 
-# No se necesita CMD, ya que Nginx se inicia automáticamente al ejecutar el contenedor

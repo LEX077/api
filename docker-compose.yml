@@ -19,7 +19,7 @@
         - api
 
     mongo:
-    image: "mongo"  # Puedes mantener esta línea para la dependencia, pero MongoDB Atlas no se ejecutará localmente en un contenedor.
+    image: "mongo"  
     ports:
       - "27017:27017"
     environment:
